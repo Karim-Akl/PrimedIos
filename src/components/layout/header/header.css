@@ -1,0 +1,582 @@
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around !important;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto; 
+  padding: 0 10px;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  padding: 16px 0;
+  font-size: 14px;
+  color: #2f2c2c;
+  box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+}
+.links-contact-top {
+  display: flex;
+  justify-content: space-evenly !important;
+  width: 40%;
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.link-phone a:hover,
+.link-location a:hover,
+.link-mail a:hover {
+  cursor: pointer;
+  color: #dd8501;
+}
+.link-phone,
+.link-location,
+.link-mail {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+.link-phone{
+  width: 60% !important;
+}
+.conatc-nav{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.links-contact-top img {
+  width: 50px;
+}
+
+
+header section {
+  /* position: fixed; */
+  top: 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0 !important;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  z-index: 999; /* عشان يبقى فوق أي عنصر تاني */
+  background-color: #fefefe;
+  /* height: 70px; */
+  transition: top 0.3s ease; /* سلاسة الحركة لما يتغير top */
+}
+
+/* كلاس لما الهيدر يكون مثبت في التوب */
+header .section.scrolled {
+  top: 0 !important;
+}
+
+.linkes-ul li {
+  list-style: none;
+  transition: 0.5s;
+  padding: 10px;
+}
+.linkes-ul li:hover {
+  color: #dd8501;
+}
+
+.linkes-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkes-ul > li {
+  position: relative;
+  display: inline-block; /* Adjust as needed */
+  margin-right: 20px; /* Space between items */
+}
+
+.linkes-ul .dropdown {
+  display: none; /* Hide by default */
+  position: absolute; /* Position relative to parent li */
+  background-color: white; /* Change as needed */
+  border: 1px solid #ccc; /* Border styling */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.linkes-ul > li:hover .dropdown {
+  display: block; /* Show on hover */
+}
+
+.linkes-ul .dropdown li {
+  padding: 10px; /* Adjust padding as needed */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.linkes-ul .dropdown li:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
+
+/* Additional media queries as necessary */
+
+header .logo-class img{
+  width: 100px;
+  object-fit: contain;
+}
+nav .nav-icone-back{
+  background-color: var(--icon-hover); 
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.hdrtp-lft {
+  display: flex;
+  align-items: stretch !important;
+  margin-top: -13px;
+}
+.icon-menu{
+  display:none !important;
+  font-size: xx-large;
+  position: absolute;
+  right:10px;
+  background-color: var(--icon-hover) ;
+  border-radius: 50%;
+  padding: 5px;
+  height: 30px;
+  margin: auto;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30px;
+  border: none !important;;
+}
+.icon-menu svg{
+  margin: auto;
+  margin-bottom: 10px;
+}
+.icon-menu:active{
+  scale: 0.9;
+}
+.icon-menu:active{
+  scale: 0.9;
+}
+
+
+
+/* ===========================
+ table of contents
+==============================
+1. Header Design
+2. Button & icon
+3- Modal == pop up
+4- Responsive Design (media query)*/
+
+/* ========================
+    1. Header Design
+=========================== */
+
+ ul.modal {
+  gap: 16px;
+  background-color: rgb(244 244 245) !important;
+
+  
+}
+
+ ul li a {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+ ul li a:hover {
+  color: var(--icon-hover);
+  opacity: 1;
+  /* font-size: xx-large; */
+  box-shadow: 1px -1111px 100px var(--icon-hover);
+}
+
+ button {
+  font-size: 1.2rem;
+}
+
+ button.men {
+  display: none;
+  background-color: rgb(244 244 245);;
+
+}
+
+/* ========================
+    2. Button & icon
+=========================== */
+.men,
+ button.mode {
+  background-color: red;
+  height: 2rem;
+  width: 2.4rem;
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+  color: red;
+  transition: 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--subtitle);
+  transform: translateX(5px);
+  box-shadow: 1px 1px 40px #2323242a;
+
+}
+
+.icon-chevron-down{
+  font-size: 12px;
+}
+
+ .icon-chevron-down:hover,
+ button.mode:hover {
+  color: var(--title);
+  /* border: 1px solid var(--border); */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+
+ .icon-x{
+  font-size: 1rem;
+  color: red !important;
+  transition: 0.3s;
+}
+
+ .icon-x:hover {
+  font-size: 1.2rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+/* ========================
+    3- Modal == pop up
+=========================== */
+ .fixed {
+  position: fixed;
+  inset: 0;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background-color: rgba(40, 40, 48, 0.91);
+
+  /* filter: blur(8px); */
+  backdrop-filter: blur(4px);
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0; /* Optional: Start fully transparent */
+  }
+
+  60% {
+    transform: translateX(10%); /* Move slightly past the final position */
+    opacity: 1; /* Optional: Fade in */
+  }
+
+  100% {
+    transform: translateX(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
+/* To animate when the element closes */
+@keyframes slideToRight {
+  0% {
+    transform: translateX(0); /* Start at the final position */
+    opacity: 1; /* Fully visible */
+  }
+
+  100% {
+    transform: translateX(100%); /* Move off-screen to the right */
+    opacity: 0; /* Optional: Fade out */
+  }
+}
+
+.element-close {
+  animation: slideToRight 0.77s 1 ease-in-out forwards;
+}
+
+header .fixed ul.modal{
+  animation: mymove 0.77s 1;
+  width: 75%;
+  /* margin-left: auto; */
+  margin-right: auto;
+  /* margin-top: 2rem; */
+  /* border-radius: 1rem; */
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  height: 100%;
+}
+
+header .fixed ul.modal li {
+  padding-top: 4rem;
+}
+
+header .fixed ul.modal li:first-child {
+  text-align: right;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+  margin-bottom: -1rem;
+}
+
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+
+header .fixed ul li a {
+  font-size: 1rem;
+  color: black;
+}
+ul.modal button{
+  border: none !important;
+}
+ul.modal button:hover{
+  font-size: xx-large;
+}
+ul.modal button{
+  font-size: x-large;
+  padding: 0px;
+}
+
+.lang-icon {
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 14px;
+  }
+  .lang-icon i{
+    color: aliceblue;
+    font-size: 21px;
+  }
+  .lang-icon span{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: white;
+  }
+  /* Sidebar styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar by default */
+    width: 250px;
+    height: 100%;
+    background: white;
+    transition: left 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Show sidebar */
+  }
+  
+  .sidebar .sidebar-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+  }
+  .dropdown-item span{
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  .dropdown-item i{
+    font-size: 19px;
+  }
+  
+  .dropdown-item .MuiIconButton-root {
+    color: black; /* Change icon color if needed */
+  }
+  
+  /* Toggle button styling */
+  .sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100; /* Ensure it’s above the sidebar */
+  }
+  
+  /* Styling for dropdown menus */
+  .MuiPaper-root {
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* General styles for dropdowns */
+  .MuiMenuItem-root {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .MuiMenuItem-root .MuiSvgIcon-root {
+    margin-right: 10px;
+  }
+  .dropdown-item .MuiIconButton-root:hover , .dropdown-item span{
+    background-color: transparent !important;
+  
+  }
+  .dropdown-con{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  
+  /* Categories menu styling */
+  .categories-menu {
+    margin-top: 20px;
+  }
+  
+  .categories-menu span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .submenufleet {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenufleet li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .submenufleet li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  .submenufleet li a:hover {
+    background-color: #f0f0f0; /* Hover effect */
+  }
+  
+  .submenufleet li a .svgicon {
+    margin-right: 10px;
+  }
+  /* Brands Menu Styling */
+  .brands-menu-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .brands-menu-content .MuiMenuItem-root {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .brand-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .brand-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand-info p {
+    margin: 0;
+  }
+  
+  .brand-info p:last-child {
+    color: #666;
+  }
+  .icone-header-social .svgicon {
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    margin: auto;
+    margin-block: 6px;
+  }
+
+/* =====================================
+  4- Responsive Design (media query)
+======================================== */
+
+@media screen and (max-width: 768px) {
+  .dropdown-con{
+    justify-content:center;
+  }
+  .dropdown-item span{
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  .dropdown-item i{
+    font-size: 15px;
+  }
+  
+}
+@media screen and (width < 1068px) {
+  .link-mail,
+  header section .link-route ul {
+    display: none !important;
+  }
+  .icon-menu{
+    display: block !important;
+    }
+}
+@media screen and (width < 768px) {
+  .link-location,
+  .link-mail {
+    display: none;
+  }
+
+}
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+
+  header .men{
+    flex-direction: row-reverse !important;
+    display: block !important;
+
+  }
+  .svgicon {
+    width: 15px !important;
+    height: 15px !important;
+}
+.icone-header-social{
+  margin-right: 30px;
+}
+.link-phone{
+  width: 90% !important;
+}
+}
+
