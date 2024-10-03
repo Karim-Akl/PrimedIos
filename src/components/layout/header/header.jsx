@@ -87,7 +87,7 @@ const Header = () => {
               <Link to="/">الرئيسية</Link>
             </li>
             <li>
-              <Link to="/">من نحن</Link>
+              <Link to="/about">من نحن</Link>
             </li>
             <li>
               <span>

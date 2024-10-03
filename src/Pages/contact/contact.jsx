@@ -82,7 +82,7 @@ const Contact = () => {
           <div className="form-info">
             <form>
               <div className="flex">
-                <input type="text" placeholder="لنك  الويب سايت " />
+                <input  type="text" placeholder="لنك  الويب سايت " />
                 <input type="text" placeholder="الاسم" />
               </div>
               <div className="flex">

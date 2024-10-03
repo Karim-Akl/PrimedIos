@@ -82,7 +82,7 @@
   text-align: center;
 }
 .bg-class-sliders .swiper-button-prev,.bg-class-sliders .swiper-rtl .swiper-button-next,.bg-class-sliders .swiper-button-next,.bg-class-sliders .swiper-rtl .swiper-button-prev{
-  display: none !important;
+  /* display: none !important; */
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
   font-size: xx-large !important;
@@ -97,6 +97,7 @@
   justify-content: center;
   gap: 20px; /* مسافة بين الأزرار */
   cursor: pointer !important;
+  z-index: 32334;
 
 }
 
@@ -112,7 +113,7 @@
 
 }
 
-.btn-next-black ,.btn-prev-black{
+.btn-next-black ,.btn-prev-black{ 
   width: 100%;
   z-index: 10;
   transition: all .2s ease-in;

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide , useSwiper } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -10,11 +10,10 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./slider-camp.css";
 
+
 const SliderCamp = () => {
   const { i18n } = useTranslation();
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-  const swiperRef = useRef(null); // مرجع للـ Swiper
+  const swiperRef = useRef(null);
 
   const brands = [
     {
@@ -32,100 +31,74 @@ const SliderCamp = () => {
       title: "ألوان",
       img: "/assets/images/bblash-logo-copy.png",
     },
-    // المزيد من العناصر
     {
-      id: 3,
+      id: 87,
       title: "ألوان",
       img: "/assets/images/bblash-logo-copy.png",
     },
-    // المزيد من العناصر
     {
-      id: 3,
+      id: 80,
       title: "ألوان",
       img: "/assets/images/bblash-logo-copy.png",
     },
-    // المزيد من العناصر
     {
-      id: 3,
+      id: 7,
       title: "ألوان",
       img: "/assets/images/bblash-logo-copy.png",
     },
-    // المزيد من العناصر
     {
-      id: 3,
+      id: 9,
       title: "ألوان",
       img: "/assets/images/bblash-logo-copy.png",
     },
-    // المزيد من العناصر
     {
-      id: 3,
+      id: 4,
       title: "ألوان",
       img: "/assets/images/bblash-logo-copy.png",
     },
-    // المزيد من العناصر
     {
-      id: 3,
+      id: 7,
       title: "ألوان",
       img: "/assets/images/bblash-logo-copy.png",
     },
-    // المزيد من العناصر
     {
-      id: 3,
+      id: 5,
       title: "ألوان",
       img: "/assets/images/bblash-logo-copy.png",
     },
-    // المزيد من العناصر
-    {
-      id: 3,
-      title: "ألوان",
-      img: "/assets/images/bblash-logo-copy.png",
-    },
-    // المزيد من العناصر
-    {
-      id: 3,
-      title: "ألوان",
-      img: "/assets/images/bblash-logo-copy.png",
-    },
-    // المزيد من العناصر
-    {
-      id: 3,
-      title: "ألوان",
-      img: "/assets/images/bblash-logo-copy.png",
-    },
-    // المزيد من العناصر
+    // Add more items as needed
   ];
 
-  useEffect(() => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      const swiperInstance = swiperRef.current.swiper;
-      swiperInstance.params.navigation.prevEl = prevRef.current;
-      swiperInstance.params.navigation.nextEl = nextRef.current;
-      swiperInstance.navigation.init();
-      swiperInstance.navigation.update();
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (swiperRef.current && swiperRef.current.swiper) {
+  //     const swiperInstance = swiperRef.current.swiper;
+  //     swiperInstance.navigation.init();
+  //     swiperInstance.navigation.update();
+  //   }
+  // }, []);
 
   return (
     <div className="bg-class-sliders" style={{ position: "relative" }}>
       <h2>عملائنا الكرام</h2>
       <Swiper
-        ref={swiperRef}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => (swiperRef.current =  {swiper} )}
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={200}
         slidesPerView={4}
         loop={true}
         autoplay={{ delay: 3000 }}
-        pagination={{ clickable: true }}
+        // pagination={{ clickable: true }}
       >
-        {brands.map((brand) => (
-          <SwiperSlide key={brand.id}>
+        {brands.map((brand, index) => (
+          <SwiperSlide key={index}>
             <div className="brand-1">
               <Link to={`/brand-detil/${brand.id}`}>
                 <img
                   src={brand.img}
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "/assets/images/logo-wb-2048x998.png"; // Fallback to default image if error occurs
+                    e.target.src = "/assets/images/logo-wb-2048x998.png"; // Fallback to default image
                   }}
                   alt={brand.title}
                 />
@@ -135,14 +108,15 @@ const SliderCamp = () => {
         ))}
       </Swiper>
 
-      {/* أزرار التنقل */}
+      {/* Navigation buttons */}
       <div className="slider-nav">
-        <button ref={prevRef} className="prev-slide">
-          <svg className="btn-next btn-next-black">
+        <button  className="prev-slide" onClick={() => swiperRef.current?.swiper.slidePrev()}>
+        <svg className="btn-next btn-next-black">
             <use xlinkHref="#arrow-right"></use>
           </svg>
         </button>
-        <button ref={nextRef} className="next-slide">
+        <button className="next-slide" onClick={() => swiperRef.current?.swiper.slideNext()}>
+  
           <svg className="btn-prev btn-prev-black">
             <use xlinkHref="#arrow-left"></use>
           </svg>
@@ -153,3 +127,5 @@ const SliderCamp = () => {
 };
 
 export default SliderCamp;
+
+

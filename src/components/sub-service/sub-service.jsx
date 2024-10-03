@@ -135,9 +135,9 @@ const SubService = () => {
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={25}
             slidesPerView={3}
-            // loop={true}
-            // autoplay={{ delay: 3000 }}
-            // pagination={{ clickable: true }}
+            loop={true}
+            autoplay={{ delay: 3000 }}
+            pagination={{ clickable: true }}
           >
             <div
               className="bloglisting blogsec  "

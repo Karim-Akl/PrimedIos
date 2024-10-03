@@ -14,7 +14,6 @@ header nav {
   font-size: 14px;
   color: #2f2c2c;
   box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.3);
-  margin-bottom: 40px;
 }
 .links-contact-top {
   display: flex;
@@ -59,7 +58,7 @@ header nav {
 
 
 header section {
-  /* position: fixed; */
+  position: fixed; 
   top: 100px;
   display: flex;
   gap: 30px;
@@ -73,12 +72,12 @@ header section {
   text-decoration: none;
   z-index: 999; /* عشان يبقى فوق أي عنصر تاني */
   background-color: #fefefe;
-  /* height: 70px; */
+  height: 70px;
   transition: top 0.3s ease; /* سلاسة الحركة لما يتغير top */
 }
 
 /* كلاس لما الهيدر يكون مثبت في التوب */
-header .section.scrolled {
+header section.scrolled {
   top: 0 !important;
 }
 
