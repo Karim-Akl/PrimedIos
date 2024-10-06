@@ -5,7 +5,7 @@ const About = () => {
     <section className="about-class">
       <div className="top-about-class-wrapper">
         <div className="container">
-          <h2>عن ماني ليك </h2>
+          <h2>عن بريميدوس </h2>
           <p>
             تأسست شركة ثرى هاند منذ عام 2008 على يد نخبة من المتخصصين، شركة
             مصرية مرخصة تعمل فى مجال تصميم المواقع وإنتاج البرمجيات و تمتلك
