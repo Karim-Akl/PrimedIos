@@ -39,7 +39,7 @@ const Contact = () => {
               <img src="/assets/images/flag.svg" alt="" width={60} />
             </div>
           <div className="flag-info">
-            <h3>طنطا - الغربية</h3>
+            <h3> القاهره </h3>
             <p>21 ش البحر</p>
           </div>
           </div>
@@ -52,7 +52,7 @@ const Contact = () => {
               />
             </div>
             <div className="mail-info">
-              <h3>info@moneyleek.online</h3>
+              <h3>info@Primedios.online</h3>
               <p>الدعم عبر الإنترنت</p>
             </div>
           </div>

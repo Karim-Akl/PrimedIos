@@ -61,7 +61,7 @@ const Header = () => {
             <a href="">
               <div className="conatc-nav">
                 <h6>Mail</h6>
-                <p> info@moneyleek.online</p>
+                <p> info@primedios.online</p>
               </div>
             </a>
           </div>

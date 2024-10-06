@@ -203,7 +203,7 @@ const Footer = () => {
                     aria-label="Developers"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://moneyleek.online"
+                    href="#!"
                   >
                     {t("footer.moneyLeek")}
                   </a>
