@@ -54,8 +54,8 @@ const Main = () => {
         modules={[Navigation, Pagination, Autoplay, Thumbs]}
         loop={true}
         slidesPerView={1}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 5000 }}
+        // pagination={{ clickable: true }}
+        // autoplay={{ delay: 5000 }}
         thumbs={{ swiper: thumbsSwiper }}
         onSlideChange={handleSlideChange} // Trigger slide change event
       >

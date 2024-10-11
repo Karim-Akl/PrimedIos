@@ -28,8 +28,9 @@ body {
   --bgHeader: rgb(39, 39, 42);
   --blue: #2dd4bf;
 
-  --icon-hover: #ff9000;
-
+  --icon-hover: #fd821a ;
+  --background:#0d4093;
+  
   --container-padding: 4.8rem;
 }
 

@@ -130,17 +130,16 @@ const SubService = () => {
           />
         </div>
 
-        <div style={{ width: "90%", textAlign: "center", margin: "auto" }}>
+        <div style={{ width: "90%", textAlign: "center", margin: "auto" ,transform: "translateY(-40%)"}}>
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={25}
             slidesPerView={3}
             loop={true}
             autoplay={{ delay: 3000 }}
-            pagination={{ clickable: true }}
           >
             <div
-              className="bloglisting blogsec  "
+              className=""
               style={{ width: "90%", textAlign: "center", margin: "auto" }}
             >
               <div className="blogwrap flex">
@@ -148,7 +147,6 @@ const SubService = () => {
                   <SwiperSlide key={slide.id}>
                     <div key={slide.id} className="post-slide">
                       <Link to={`/services/${slide.id}`}>
-                        <a aria-label="Blog Details" href="#!">
                           <div className="post-img">
                             <img
                               loading="lazy"
@@ -158,8 +156,7 @@ const SubService = () => {
                               title={slide.title || "Blog Post"}
                             />
                           </div>
-                        </a>
-                        <div className="post-review">
+                        {/* <div className="post-review">
                           <h3 className="post-title">
                             {" "}
                             {slide.title || "Blog Post"}
@@ -169,9 +166,9 @@ const SubService = () => {
                             href="#!"
                             className="read"
                           >
-                            {/* <div> المزيد</div> */}
+                            <div> المزيد</div>
                           </a>
-                        </div>
+                        </div> */}
                       </Link>
                     </div>
                   </SwiperSlide>

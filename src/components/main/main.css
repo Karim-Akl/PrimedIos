@@ -1,57 +1,57 @@
-main{
+main {
   height: 60vh;
   overflow: hidden;
-  border-bottom: 1px solid var(--icon-hover);
+  border-bottom: 3px solid var(--icon-hover);
   margin-top: 70px;
-
 }
-.main-class ,.slider-2,.slider-3{
-  height: 57vh;
+.main-class,
+.slider-2,
+.slider-3 {
+  height: 60vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
   text-align: center;
   margin: auto;
-  margin-top: 30px;
-  background-color: var(--icon-hover) ;
+  background-color: var(--background) !important;
   overflow: hidden;
 }
-.main-class .flex{
+.main-class .flex {
   display: flex;
   justify-content: space-between !important;
   align-items: center;
   gap: 50px;
 }
-.img-lift-class{
+.img-lift-class {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 270px;
 }
 
-.img-foote-smoll{
+.img-foote-smoll {
   position: absolute;
-  top:100px ;
+  top: 100px;
   left: 20px;
-  width: 270px;
+  width: 51px !important;
 }
 
-.img-right-class{
+.img-right-class {
   position: absolute;
   bottom: -200px;
   right: 0;
   width: 270px;
   rotate: -98deg;
 }
-.img-right-class-2{
+.img-right-class-2 {
   position: absolute;
   bottom: -200px;
   right: 0;
   width: 270px;
   rotate: -98deg;
 }
-.img-bg-class{
+.img-bg-class {
   background-image: url(../../../public/assets/images/Group-7.png);
   object-fit: contain;
   background-position: center;
@@ -67,8 +67,25 @@ main{
   left: 20%;
   text-align: center !important;
   justify-content: center !important;
+  h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--icon-hover);
+    text-decoration: underline;
+    font-family: "Hacen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: "Hacen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
 }
-.slider-2 ,.slider-3{
+.slider-2,
+.slider-3 {
   object-fit: contain;
   background-position: center;
   background-size: contain;
@@ -77,12 +94,12 @@ main{
   margin: auto;
   position: relative;
   display: flex;
-  background-color: var(--icon-hover) !important;
+
   overflow: hidden;
-  margin-top: 30px;
+
   position: relative;
 }
-.slider-3-text{
+.slider-3-text {
   width: 40%;
   margin: auto;
   justify-content: center;
@@ -94,20 +111,22 @@ main{
   flex-direction: column;
   margin-top: 50px;
   line-height: 50px;
-  & h3{
+  & h3 {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
     background-color: #2d2f39;
     padding: 10px;
   }
-  & h2{
+  & h2 {
     font-size: 50px;
     font-weight: 900;
     margin-bottom: 10px;
     padding: 10px;
+    text-decoration: underline;
+    color: #fd821a;
   }
-  & p{
+  & p {
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -115,9 +134,8 @@ main{
     width: 500px;
     height: 50px;
   }
-  
 }
-.img-top-and-right{
+.img-top-and-right {
   position: absolute;
   top: 0;
   right: 0;
@@ -129,20 +147,21 @@ main{
     margin-top: 100px;
   }
   .img-foote-smoll {
-
     position: absolute;
     top: 30px !important;
     width: 51px !important;
-& img{
-width: 100% !important;
-}
+    & img {
+      width: 100% !important;
+    }
   }
 }
 @media only screen and (max-width: 1067px) {
-  main{
+  main {
     height: 80vh;
   }
-  .main-class ,.slider-2,.slider-3{
+  .main-class,
+  .slider-2,
+  .slider-3 {
     height: 80vh !important;
     overflow: hidden;
     height: 100%;
@@ -154,7 +173,7 @@ width: 100% !important;
   .img-lift-class {
     width: 150px !important;
     margin-top: 50px;
-}
+  }
   .slider-3-text {
     width: 90% !important;
     margin: auto;
@@ -174,41 +193,56 @@ width: 100% !important;
       background-color: #2d2f39;
       padding: 10px;
     }
-    & h2{
-      font-size: 20px;
-
+    & h2 {
+      font-size: 50px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      padding: 10px;
+      text-decoration: underline !important;
+      color: #fd821a !important;
     }
-    & p{
-      font-size: 10px;
+    & p {
+      font-size: 15px;
       width: 80% !important;
-
+    }
   }
-}
 
   .img-foote-smoll {
+    position: absolute;
+    top: 30px !important;
+    width: 51px !important;
+    & img {
+      width: 100% !important;
+    }
+  }
+  .img-bg-class {
+    width: 300px !important;
+    margin-top: 100px;
+  }
+  .img-right-class {
+    display: none !important;
+  }
+  .main-class .flex {
+    gap: 0px !important;
+    width: 95% !important;
+    height: 100% !important;
+    margin-block: -30px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0px !important;
 
-      position: absolute;
-      top: 30px !important;
-      width: 51px !important;
- & img{
-  width: 100% !important;
- }
+    & .animate__backInDown {
+      width: 30% !important;
+      height: 100% !important;
+      margin-top: 0px;
+      display: flex;
+      gap: 0px !important;
+    }
 
-}
-.img-bg-class {
-  width: 300px !important;
-  margin-top: 100px;
-}
-.img-right-class{
-  display: none !important;
-}
-.main-class .flex {
-  gap: 0px !important;
-  width: 95% !important;
-  height: 100% !important;
-  margin-block: -30px;
-  & img{
-    width: 100% !important;
-}
-}
+    & img {
+      width: 100% !important;
+    }
+  }
 }

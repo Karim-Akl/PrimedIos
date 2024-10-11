@@ -2,12 +2,12 @@ import React from "react";
 import "./sub-about.css";
 const SubAbout = () => {
   return (
-    <div className="sub-about ">
+    <div className="sub-about">
       <div className="container  flex">
         <div className="sub-about-text-right">
-          <h2>نبذة عن بريميدوس  </h2>
+          <h2>نبذة عن بريميدوس </h2>
           <p>
-          بريميدوس أفضل شركة تصميم مواقع، ودا لأننا عندنا خبرة كبيرة في المجال
+            بريميدوس أفضل شركة تصميم مواقع، ودا لأننا عندنا خبرة كبيرة في المجال
             ده وبنقدم خدماتنا من 15 سنة، وخلال الفترة دي عملنا عدد كبير من
             المواقع الإلكترونية والمتاجر الإلكترونية، وعندنا أكبر سابقة أعمال في
             مصر.
@@ -24,7 +24,12 @@ const SubAbout = () => {
             أفضل الخدمات لعملائنا.
           </p>
           <div className="sub-about-btn ">
-            <button className="btn" onClick={() => window.location.href = "/about"} >عرض المزيد</button>
+            <button
+              className="btn"
+              onClick={() => (window.location.href = "/about")}
+            >
+              عرض المزيد
+            </button>
           </div>
         </div>
         <div className="sub-about-img-left">

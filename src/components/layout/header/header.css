@@ -15,6 +15,9 @@ header nav {
   color: #2f2c2c;
   box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.3);
 }
+nav use{
+    fill: #fff;
+}
 .links-contact-top {
   display: flex;
   justify-content: space-evenly !important;
@@ -130,7 +133,7 @@ header .logo-class img{
   object-fit: contain;
 }
 nav .nav-icone-back{
-  background-color: var(--icon-hover); 
+  background-color: var(--background); 
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -165,7 +168,7 @@ nav .nav-icone-back{
 }
 .icon-menu svg{
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom:4px;
 }
 .icon-menu:active{
   scale: 0.9;
@@ -524,6 +527,9 @@ ul.modal button{
     margin-block: 6px;
   }
 
+ .linkes-ul .angle-icon{
+    transform: translateY(5px) !important;
+  }
 /* =====================================
   4- Responsive Design (media query)
 ======================================== */

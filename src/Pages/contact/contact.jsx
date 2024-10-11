@@ -35,7 +35,7 @@ const Contact = () => {
 
         <div className="contact-info flex ">
           <div className="contact-flag ">
-            <div>
+            <div style={{width: 60, height: 60}}> 
               <img src="/assets/images/flag.svg" alt="" width={60} />
             </div>
           <div className="flag-info">
@@ -44,7 +44,7 @@ const Contact = () => {
           </div>
           </div>
           <div className="contact-mail ">
-            <div>
+            <div style={{width: 60, height: 60}}>
               <img
                 src="/assets/images/message.svg"
                 alt=""
@@ -57,7 +57,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-phone ">
-            <div>
+            <div style={{width: 60, height: 60}}>
               <img
                 src="/assets/images/1456266303_contact-09.svg"
                 alt=""

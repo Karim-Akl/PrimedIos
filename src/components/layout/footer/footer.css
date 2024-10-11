@@ -14,6 +14,7 @@
 footer {
   border-top: 3px solid var(--icon-hover) !important;
   position: relative;
+  background-color: var(--icon-hover) !important;
   width: 100%;
   bottom: 0px !important;
   /* margin-top: 20px;  */
@@ -35,9 +36,7 @@ footer .google {
   justify-content: center;
   align-items: center;
   margin: auto;
-  /* background-color: white; */
   border-radius: 7px;
-  /* color: black !important; */
   padding: 5px;
   text-align: center;
   width: 200px !important;
@@ -112,11 +111,11 @@ iframe{
   width: 100%;
   position: relative;
   display: block;
-  background-color: #2e2e2e;
   padding: 50px 0px 85px 0px;
   background-repeat: no-repeat;
   background-size: 19%;
   background-position: 99% bottom;
+  background-color: var(--background) !important;
 }
 
 .coprwrap {

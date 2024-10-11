@@ -48,15 +48,19 @@
   position: relative; 
   height: 500px;
   text-align: center;
-  h2{
-    color: #f05c07;
+  overflow: hidden;
+  h2 {
+    color: #dd8501;
     font-weight: 700;
     font-size: 30px;
     margin: 0;
-    padding: 0;width: 100%;
+    padding: 0;
+    text-decoration: underline;
+    width: 100%;
     position: absolute;
     margin-top: 50px;
-  }
+    text-align: center;
+}
 }
 
 .brand-1 {
