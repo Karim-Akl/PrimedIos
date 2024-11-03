@@ -99,7 +99,7 @@ const SubService = () => {
               className="btn"
               onClick={() => (window.location.href = "/services")}
             >
-              عرض المزيد
+              سابقه اعمال 
             </button>
           </div>
         </div>
