@@ -1,4 +1,4 @@
-main {
+main.main-class-smoll {
   height: 60vh;
   overflow: hidden;
   border-bottom: 3px solid var(--icon-hover);
@@ -22,6 +22,7 @@ main {
   justify-content: space-between !important;
   align-items: center;
   gap: 50px;
+  width: 60% !important;
 }
 .img-lift-class {
   position: absolute;
@@ -162,7 +163,7 @@ main {
   .main-class,
   .slider-2,
   .slider-3 {
-    height: 80vh !important;
+    height: 60vh !important;
     overflow: hidden;
     height: 100%;
     width: 100%;
@@ -181,20 +182,20 @@ main {
     align-items: center;
     display: flex;
     text-align: center;
-    margin-top: 20px;
+
     color: white;
     flex-direction: column;
-    margin-top: 50px;
-    line-height: 40px;
+    margin-top: 100px;
+    line-height: 20px;
     & h3{
-      font-size: 15px;
+      font-size: 10px;
       font-weight: 700;
       margin-bottom: 10px;
       background-color: #2d2f39;
       padding: 10px;
     }
     & h2 {
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 900;
       margin-bottom: 10px;
       padding: 10px;
@@ -202,7 +203,7 @@ main {
       color: #fd821a !important;
     }
     & p {
-      font-size: 15px;
+      font-size: 10px;
       width: 80% !important;
     }
   }
@@ -216,8 +217,15 @@ main {
     }
   }
   .img-bg-class {
-    width: 300px !important;
-    margin-top: 100px;
+    padding: 10px !important;
+    margin-top: 70px;
+    margin-inline: 20px !important;;
+    h3{
+      font-size: 30px !important;
+    }
+    p{
+      font-size: 15px !important;
+    }
   }
   .img-right-class {
     display: none !important;
@@ -225,10 +233,10 @@ main {
   .main-class .flex {
     gap: 0px !important;
     width: 95% !important;
-    height: 100% !important;
+    height: 60vh !important;
     margin-block: -30px;
     display: flex;
-    flex-direction: column !important;
+    flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
     gap: 0px !important;

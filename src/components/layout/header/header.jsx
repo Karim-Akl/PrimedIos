@@ -48,7 +48,7 @@ const Header = () => {
             <a href="">
               <div className="conatc-nav">
                 <p>اتصل بنا</p>
-                <h6>01220663807</h6>
+                <h6>1558820103(20+)</h6>
               </div>
             </a>
           </div>
@@ -61,7 +61,7 @@ const Header = () => {
             <a href="">
               <div className="conatc-nav">
                 <h6>Mail</h6>
-                <p> info@primedios.online</p>
+                <p> info@primedios.com</p>
               </div>
             </a>
           </div>
@@ -74,7 +74,7 @@ const Header = () => {
             <a href="" style={{ width: "10rem" }}>
               <div className="conatc-nav">
                 <h6>مقر الرئيسي : </h6>
-                <p>Tanta Elgharbia - Egypt</p>
+                <p> Egypt , Cairo</p>
               </div>
             </a>
           </div>
@@ -91,18 +91,18 @@ const Header = () => {
             </li>
             <li>
               <span>
-                <Link to="/">سابقة الاعمال</Link>
+                <Link to="/services">سابقة الاعمال</Link>
               </span>
-              <svg className="svgicon angle-icon">
+              {/* <svg className="svgicon angle-icon">
                 <use xlinkHref="#angle-icon" />
               </svg>
               <ul className="dropdown">
                 <li>Option 1</li>
                 <li>Option 2</li>
                 <li>Option 3</li>
-              </ul>
+              </ul> */}
             </li>
-            <li>
+            {/* <li>
               <span>
                 <Link to="/">تسويق الكتروني</Link>
               </span>
@@ -110,12 +110,12 @@ const Header = () => {
                 <use xlinkHref="#angle-icon" />
               </svg>
               <ul className="dropdown">
-                <li>Option 1</li>
+                <li></li>
                 <li>Option 2</li>
                 <li>Option 3</li>
               </ul>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <span>
                 <Link to="/">التوظيف</Link>
               </span>
@@ -127,7 +127,7 @@ const Header = () => {
                 <li>Option 2</li>
                 <li>Option 3</li>
               </ul>
-            </li>
+            </li> */}
             <li>
               <Link to="/contact">تواصل معنا</Link>
             </li>
@@ -140,45 +140,45 @@ const Header = () => {
                 label: "Facebook",
                 icon: "facebook-icon",
                 background: "#1877F2",
-                href: "/",
+                href: "https://www.facebook.com/primedios/",
               },
               {
                 label: "LinkedIn",
                 icon: "linkedin-icon",
                 background: "#0077B5",
-                href: "/",
+                href: "https://www.linkedin.com/company/primedios/",
               },
               {
                 label: "Instagram",
                 icon: "instagram-icon",
                 background:
                   "linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)",
-                href: "/",
+                href: "https://www.instagram.com/primedios/",
               },
-              {
-                label: "Twitter",
-                icon: "twitter-icon",
-                background: "#1DA1F2",
-                href: "/",
-              },
+              // {
+              //   label: "Twitter",
+              //   icon: "twitter-icon",
+              //   background: "#1DA1F2",
+              //   href: "",
+              // },
               {
                 label: "TikTok",
                 icon: "tiktok-icon",
                 background: "#000000",
-                href: "/",
+                href: "https://www.tiktok.com/@primedios",
               },
-              {
-                label: "YouTube",
-                icon: "youtube-icon",
-                background: "#FF0000",
-                href: "/",
-              },
-              {
-                label: "Pinterest",
-                icon: "pinterest-icon",
-                background: "#E60023",
-                href: "/",
-              },
+              // {
+              //   label: "YouTube",
+              //   icon: "youtube-icon",
+              //   background: "#FF0000",
+              //   href: "/",
+              // },
+              // {
+              //   label: "Pinterest",
+              //   icon: "pinterest-icon",
+              //   background: "#E60023",
+              //   href: "/",
+              // },
             ].map((social, index) => (
               <a
                 className="social x"
@@ -226,16 +226,16 @@ const Header = () => {
                   </button>
                 </li>
                 <li onClick={() => setShowModal(false)}>
-                  <Link to="/">Home</Link>
+                  <Link to="/">الصفحه الرئيسية</Link>
                 </li>
                 <li onClick={() => setShowModal(false)}>
-                  <Link to="/about">About</Link>
+                  <Link to="/about">من نحن</Link>
                 </li>
                 <li onClick={() => setShowModal(false)}>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="services">سابقة الاعمال</Link>
                 </li>
                 <li onClick={() => setShowModal(false)}>
-                  <Link to="/blog">Blog</Link>
+                  <Link to="/contact">تواصل معنا</Link>
                 </li>
                 <div className="dropdown-con">{/* Language Dropdown */}</div>
               </ul>

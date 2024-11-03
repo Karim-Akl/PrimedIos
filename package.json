@@ -5,6 +5,9 @@
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/icons-material": "^6.1.1",
     "@mui/material": "^6.1.1",
     "@popperjs/core": "^2.11.8",
@@ -13,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
+    "framer-motion": "^11.11.11",
     "i18next": "^23.15.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
@@ -50,9 +54,8 @@
   "devDependencies": {
     "@babel/parser": "^7.25.6",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
-  ,"engines": {
-  "node": ">=16.0.0"
-}
-
 }

@@ -14,7 +14,7 @@ const resources = {
 };
 
 // تحميل اللغة المحفوظة أو اللغة الافتراضية
-const savedLanguage = localStorage.getItem('language') || 'ar';
+const savedLanguage = localStorage.getItem('ar') || 'ar';
 
 i18n
   .use(initReactI18next)

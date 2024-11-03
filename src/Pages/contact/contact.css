@@ -4,7 +4,6 @@
   margin: auto;
   gap: 50px;
   margin-top: 70px;
-
 }
 .top-contact {
   display: flex;
@@ -17,18 +16,20 @@
   background-color: var(--icon-hover);
   background: linear-gradient(
       90deg,
-      var(--icon-hover) 40%,
-      rgba(255, 255, 255, 0.5) 100%
+      var(--background) 100%,
+      rgba(0, 0, 1, 0.803) 100%
     ),
     url(https://moneyleek.online/wp-content/themes/1/seosight/images/bg-9.png);
   h2 {
     font-size: 40px;
     font-weight: 700;
+    color: #d3dcdc;
   }
   span {
     font-size: 20px;
+    color: #d3dcdc;
     &:hover {
-      color: aliceblue;
+      color:  var(--icon-hover);
     }
   }
   .contact-span {
@@ -196,22 +197,20 @@
       transition: all 0.3s ease;
       text-align: center;
       border-color: transparent;
-      &:hover{
-        background-color:var(--primary);
+      &:hover {
+        background-color: var(--primary);
         color: var(--icon-hover) !important;
       }
-      &:hover span{
+      &:hover span {
         color: var(--icon-hover) !important;
       }
     }
     span {
       display: inline;
       vertical-align: middle;
-      
-  }
+    }
   }
 }
-
 
 .semicircle {
   display: block;
@@ -223,7 +222,7 @@
   overflow: hidden;
 }
 .semicircle:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 35px;
@@ -240,7 +239,7 @@
   left: 0;
   top: 0;
   position: absolute;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 868px) {
@@ -253,7 +252,7 @@
     justify-content: center;
     padding: 50px;
   }
-  .bottom-contact{
+  .bottom-contact {
     padding: 0px !important;
     width: 90% !important;
   }

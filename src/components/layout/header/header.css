@@ -555,6 +555,11 @@ ul.modal button{
   .icon-menu{
     display: block !important;
     }
+
+header section {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
 }
 @media screen and (width < 768px) {
   .link-location,

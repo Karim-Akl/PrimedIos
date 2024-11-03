@@ -14,35 +14,26 @@ const SubService = () => {
   const { t } = useTranslation();
   const slides = [
     {
-      id: 1,
-      title: "برمجة وتطوير",
-      image_url: "/assets/images/03w.jpg",
-    },
-    {
       id: 2,
+      title: "سوشيال ميديا",
+      image_url: "/assets/images/Untitledrwe.png",
+    }
+    ,{
+      id: 4,
       title: "برمجة وتطوير",
-      image_url: "/assets/images/06w.jpg",
-    },
-    {
-      id: 3,
+      image_url: "/assets/images/Untitled 2eq.png",
+    }
+    ,{
+      id: 5,
       title: "برمجة وتطوير",
-      image_url: "/assets/images/06w.jpg",
-    },
-    {
-      id: 3,
+      image_url: "/assets/images/Untitledm.png",
+    }
+    ,{
+      id: 5,
       title: "برمجة وتطوير",
-      image_url: "/assets/images/06w.jpg",
-    },
-    {
-      id: 3,
-      title: "برمجة وتطوير",
-      image_url: "/assets/images/06w.jpg",
-    },
-    {
-      id: 3,
-      title: "برمجة وتطوير",
-      image_url: "/assets/images/06w.jpg",
-    },
+      image_url: "/assets/images/Portfolio.png",
+    }
+    
   ];
   return (
     <div className="sub-service ">
@@ -130,7 +121,14 @@ const SubService = () => {
           />
         </div>
 
-        <div style={{ width: "90%", textAlign: "center", margin: "auto" ,transform: "translateY(-40%)"}}>
+        <div
+          style={{
+            width: "90%",
+            textAlign: "center",
+            margin: "auto",
+            transform: "translateY(-40%)",
+          }}
+        >
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={25}
@@ -146,16 +144,16 @@ const SubService = () => {
                 {slides.map((slide) => (
                   <SwiperSlide key={slide.id}>
                     <div key={slide.id} className="post-slide">
-                      <Link to={`/services/${slide.id}`}>
-                          <div className="post-img">
-                            <img
-                              loading="lazy"
-                              src={slide.image_url || "/default-image.jpg"}
-                              width={200}
-                              alt={slide.title || "Blog Post"}
-                              title={slide.title || "Blog Post"}
-                            />
-                          </div>
+                      <Link to={`/services`}>
+                        <div className="post-img">
+                          <img
+                            loading="lazy"
+                            src={slide.image_url || "/default-image.jpg"}
+                            width={200}
+                            alt={slide.title || "Blog Post"}
+                            title={slide.title || "Blog Post"}
+                          />
+                        </div>
                         {/* <div className="post-review">
                           <h3 className="post-title">
                             {" "}

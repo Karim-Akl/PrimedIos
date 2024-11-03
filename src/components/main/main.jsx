@@ -49,7 +49,7 @@ const Main = () => {
   };
 
   return (
-    <main>
+    <main className="main-class-smoll">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, Thumbs]}
         loop={true}
