@@ -3,9 +3,9 @@ import "./order-now.css";
 const OrderNow = () => {
   return (
     <div className="">
-      <div>
+      {/* <div>
         <img src="/assets/images/11.png" alt="" />
-      </div>
+      </div> */}
     <div className="order flex">
       <div className="container order-bg">
 

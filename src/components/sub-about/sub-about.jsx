@@ -34,10 +34,12 @@ const SubAbout = () => {
         </div>
         <div className="sub-about-img-left">
           <img
-            src="/assets/images/about-1.png"
+            src="/assets/images/pexels-divinetechygirl-1181406.jpg"
             alt="not found"
             width={500}
             height={500}
+            style={{borderRadius:"15px"}}
+
           />
         </div>
       </div>
